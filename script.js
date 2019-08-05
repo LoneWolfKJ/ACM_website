@@ -96,3 +96,9 @@ $(window).on('scroll',function(){
     x=$(window).scrollTop();
     }
 });
+
+function getId(element)
+{
+    console.log("hello");
+    location.href="./articleonclick.html";
+}

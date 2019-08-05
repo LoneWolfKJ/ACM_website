@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) and (orientation : portrait)
+{
+    .article
+    {
+        height: 130px;
+    }
+    .article-back
+    {
+        
+    }
+    .articles
+    {
+       
+    }
+    .detaila
+    {
+        width: 60vw;
+        height: 130px;
+    }
+    .ahead
+    {
+        font-size: 20px;
+        letter-spacing: 0.5px;  
+        font-weight: 900;
+        padding: 20px;    
+    }
+
+    .det
+    {
+        font-size: 15px;
+    }
+    .aimg
+    {
+        width: 30vw;
+        height:130px;
+        /* height:0vw; */
+    }
+}
