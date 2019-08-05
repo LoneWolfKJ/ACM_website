@@ -27,7 +27,7 @@ body
 
     height: 80px;
     /* background-color: #0561b8; */
-    background-image:linear-gradient(to right bottom,rgba(11, 46, 201, 0.8),rgba(40, 180, 161, 0.8)),url("nav-back.jpg");
+    background-image:linear-gradient(to right bottom,rgba(11, 46, 201, 0.8),rgba(40, 180, 161, 0.8)),url("../Images/home/nav-back.jpg");
     font-family: 'Poppins',sans-serif;
     transition: all .5s ease;
 }
@@ -129,7 +129,7 @@ body
         height: calc( 100% - 80px );
         top: 80px;
         /* background-color: #0562b8; */
-        background-image:  linear-gradient(to right bottom,rgba(11, 46, 201, 0.8),rgba(11, 255, 194, 0.8)),url("nav-back.jpg");
+        background-image:  linear-gradient(to right bottom,rgba(11, 46, 201, 0.8),rgba(11, 255, 194, 0.8)),url("../Images/home/nav-back.jpg");
         /* background-origin: top;   */
         flex-direction: column;
         width: 100%;
