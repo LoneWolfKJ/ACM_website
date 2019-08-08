@@ -54,10 +54,10 @@ body
 .nav-links
 {
     z-index: 1;
-    display: flex;
-    /* background-color: #0561b8; */
-    justify-content: space-around;
-    width: 65%;
+     display: flex;
+   /* background-color: #0561b8;*/
+    justify-content: space-around; 
+    width: 55%;
     padding: 0;
 }
 .nav-links a

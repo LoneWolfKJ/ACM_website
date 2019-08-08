@@ -45,7 +45,7 @@ body
     display: flex;
     /* background-color: #0561b8; */
     justify-content: space-around;
-    width: 65%;
+    width: 55%;
     padding: 0;
 }
 .nav-links a
