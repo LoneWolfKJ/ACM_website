@@ -117,3 +117,43 @@ function on(x) {
 span.onclick = function() {
   document.getElementById("overlay").style.display = "none";
 }
+
+function showUser() {
+    email = document.getElementById('emailSubscribe').value;
+    name = document.getElementById('nameSubscribe').value;  
+    if (email=="" || name=="") {
+        document.getElementById("alertBox").innerHTML="";
+        return;
+    } 
+    if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    var data = new FormData();
+    data.append('email', email);
+    data.append('name', name);
+    var params = "email="+email+"&name="+name;
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            $("#alertBox").fadeTo(2000, 500).slideUp(500, function() {
+            $("#alertBox").slideUp(500);
+            document.getElementById("closeAlert").style.display="block";
+            });
+            document.getElementById("alertData").innerHTML = this.responseText;
+            document.getElementById("closeAlert").style.display="block";
+            if(this.responseText == "Already, subscribed") {
+                document.getElementById("alertBox").className = "alert alert-warning";
+            } else if (this.responseText == "Sucessfully subscribed") {
+                document.getElementById("alertBox").className = "alert alert-success";
+            } else if (this.responseText == "Invalid input") {
+                document.getElementById("alertBox").className = "alert alert-danger";
+            }
+        }
+    };
+    //console.log(data);
+    xmlhttp.open("POST","http://localhost/subscribe.php",true);
+    xmlhttp.send(data);
+}
