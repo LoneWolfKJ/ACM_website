@@ -17,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/events.css">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/events.css">
 </head>
 
 <body background="background1.jpeg">
@@ -65,6 +65,41 @@
         </nav>
     </div>
     <div class="content">
+<<<<<<< HEAD
+=======
+        <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Subscribe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="alertBox" class="alert" style="margin: 5px 5px 5px 5px;">
+                        <a href="#" id="closeAlert" style="display: none;" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <div id="alertData"></div>
+                </div>
+                <form class="form modal-body" role="form" autocomplete="off" id="formLogin" novalidate="">
+                        <div class="form-group">
+                            <label for="name">Email</label>
+                            <input type="email" class="form-control form-control-lg rounded-0" name="email" id="emailSubscribe" required="true">
+                        </div>
+                            
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control form-control-lg rounded-0" name="name" id="nameSubscribe" required="true">
+                        </div>
+                        <br>                            
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-login" onclick="showUser()">Subscribe</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+>>>>>>> 69f9700... Update Events.html
         <div class="Body-content">
             <div id="overlay">
               <div class="pop-box">
@@ -183,10 +218,6 @@
                   </li>
                 </ul>
               </div>
-
-
-
-
             </div>
         <div class="footer">
             <div class="icon">
@@ -207,6 +238,9 @@
         </div>
     </div>
     <script src="../script.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
