@@ -56,6 +56,38 @@
             </nav>
         </div>
         <div class="content">
+                <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div id="alertBox" class="alert" style="margin: 5px 5px 5px 5px;">
+                                    <a href="#" id="closeAlert" style="display: none;" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    <div id="alertData"></div>
+                            </div>
+                            <form class="form modal-body" role="form" autocomplete="off" id="formLogin" novalidate="">
+                                    <div class="form-group">
+                                        <label for="name">Email</label>
+                                        <input type="email" class="form-control form-control-lg rounded-0" name="email" id="emailSubscribe" required="true">
+                                    </div>
+                                        
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="name" id="nameSubscribe" required="true">
+                                    </div>
+                                    <br>                            
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                <button type="button" class="btn btn-login" onclick="showUser()">Subscribe</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
     <div class="Body-content">
     <img class="article-back" src="../Images/article/book.jpg">
     <div class="article">Articles</div>

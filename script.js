@@ -96,6 +96,13 @@ $(window).on('scroll',function(){
     x=$(window).scrollTop();
     }
 });
+
+function getId(element)
+{
+    console.log("hello");
+    location.href="./articleonclick.html";
+}
+
 // Get the modal
 var modal = document.getElementById("myModal1");
 
